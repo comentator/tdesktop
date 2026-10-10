@@ -1,0 +1,2022 @@
+{
+  "schema": 1,
+  "status": "ok",
+  "backend_requested": "metal",
+  "metric": "provisional_label_correspondence",
+  "actual_speech_ground_truth": false,
+  "production_approved": false,
+  "coverage_gaps": [
+    "New human review waived; no human listening/review fabricated.",
+    "Publisher labels are provisional written references, not independently verified actual-speech ground truth.",
+    "Genuine dialect, spontaneous, mixed-language, unclear, critical-meaning and natural-long speech remain unqualified.",
+    "No calibrated uncertainty, abstention/[unclear] policy, or production approval.",
+    "Constructed concatenation is not a natural conversation or proof of omission handling.",
+    "Generated video geometry is fixture-only, not Telegram video-message rendering/integration.",
+    "Forced en observes language override; references are never translated."
+  ],
+  "rows": [
+    {
+      "id": "original_01",
+      "type": "approved_cc0_original",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 41120,
+      "samples": 41120,
+      "duration_seconds": 2.57,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 41120,
+          "start_seconds": 0.0,
+          "end_seconds": 2.57
+        }
+      ],
+      "runtime_seconds": 0.45035341699999876,
+      "native_inference_seconds": 0.4482,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 15,
+        "token_p": {
+          "available_count": 15,
+          "min": 0.587906122,
+          "max": 0.999965668
+        },
+        "token_plog": {
+          "available_count": 15,
+          "min": -0.531188011,
+          "max": -3.43322754e-05
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 0.00137884682,
+          "max": 0.00137884682
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 15,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 5,
+            "edit_ratio": 0.4
+          },
+          "character": {
+            "edits": 4,
+            "substitutions": 1,
+            "deletions": 1,
+            "insertions": 2,
+            "reference_count": 41,
+            "edit_ratio": 0.0975609756097561
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 5,
+            "edit_ratio": 0.2
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "reference_count": 41,
+            "edit_ratio": 0.04878048780487805
+          }
+        }
+      }
+    },
+    {
+      "id": "original_01",
+      "type": "approved_cc0_original",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 41120,
+      "samples": 41120,
+      "duration_seconds": 2.57,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 41120,
+          "start_seconds": 0.0,
+          "end_seconds": 2.57
+        }
+      ],
+      "runtime_seconds": 0.3102194580000006,
+      "native_inference_seconds": 0.308153875,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 15,
+        "token_p": {
+          "available_count": 15,
+          "min": 0.587906122,
+          "max": 0.999965668
+        },
+        "token_plog": {
+          "available_count": 15,
+          "min": -0.531188011,
+          "max": -3.43322754e-05
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 7.17016349e-08,
+          "max": 7.17016349e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 15,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 5,
+            "edit_ratio": 0.4
+          },
+          "character": {
+            "edits": 4,
+            "substitutions": 1,
+            "deletions": 1,
+            "insertions": 2,
+            "reference_count": 41,
+            "edit_ratio": 0.0975609756097561
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 5,
+            "edit_ratio": 0.2
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "reference_count": 41,
+            "edit_ratio": 0.04878048780487805
+          }
+        }
+      }
+    },
+    {
+      "id": "original_01",
+      "type": "approved_cc0_original",
+      "language_requested": "en",
+      "status": "ok",
+      "samples_expected": 41120,
+      "samples": 41120,
+      "duration_seconds": 2.57,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 41120,
+          "start_seconds": 0.0,
+          "end_seconds": 2.57
+        }
+      ],
+      "runtime_seconds": 0.3057803329999995,
+      "native_inference_seconds": 0.303880583,
+      "languages_reported": [
+        "en"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 15,
+        "token_p": {
+          "available_count": 15,
+          "min": 0.270916164,
+          "max": 0.998536229
+        },
+        "token_plog": {
+          "available_count": 15,
+          "min": -1.30594587,
+          "max": -0.00146484375
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 7.17016349e-08,
+          "max": 7.17016349e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 15,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 5,
+            "edit_ratio": 0.4
+          },
+          "character": {
+            "edits": 4,
+            "substitutions": 1,
+            "deletions": 1,
+            "insertions": 2,
+            "reference_count": 41,
+            "edit_ratio": 0.0975609756097561
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 5,
+            "edit_ratio": 0.2
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 1,
+            "insertions": 1,
+            "reference_count": 41,
+            "edit_ratio": 0.04878048780487805
+          }
+        }
+      }
+    },
+    {
+      "id": "original_02",
+      "type": "approved_cc0_original",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 22400,
+      "samples": 22400,
+      "duration_seconds": 1.4,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 22400,
+          "start_seconds": 0.0,
+          "end_seconds": 1.4
+        }
+      ],
+      "runtime_seconds": 0.35827170900000027,
+      "native_inference_seconds": 0.3568515,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 10,
+        "token_p": {
+          "available_count": 10,
+          "min": 0.703948319,
+          "max": 0.999998093
+        },
+        "token_plog": {
+          "available_count": 10,
+          "min": -0.351050377,
+          "max": -1.90734863e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 0.0060947095,
+          "max": 0.0060947095
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 10,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 3,
+            "edit_ratio": 0.3333333333333333
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 2,
+            "reference_count": 16,
+            "edit_ratio": 0.125
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 3,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 16,
+            "edit_ratio": 0.0625
+          }
+        }
+      }
+    },
+    {
+      "id": "original_02",
+      "type": "approved_cc0_original",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 22400,
+      "samples": 22400,
+      "duration_seconds": 1.4,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 22400,
+          "start_seconds": 0.0,
+          "end_seconds": 1.4
+        }
+      ],
+      "runtime_seconds": 0.23819533300000018,
+      "native_inference_seconds": 0.23702725,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 10,
+        "token_p": {
+          "available_count": 10,
+          "min": 0.703948319,
+          "max": 0.999998093
+        },
+        "token_plog": {
+          "available_count": 10,
+          "min": -0.351050377,
+          "max": -1.90734863e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.25326736e-07,
+          "max": 1.25326736e-07
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 10,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 3,
+            "edit_ratio": 0.3333333333333333
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 2,
+            "reference_count": 16,
+            "edit_ratio": 0.125
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 3,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 16,
+            "edit_ratio": 0.0625
+          }
+        }
+      }
+    },
+    {
+      "id": "original_02",
+      "type": "approved_cc0_original",
+      "language_requested": "en",
+      "status": "ok",
+      "samples_expected": 22400,
+      "samples": 22400,
+      "duration_seconds": 1.4,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 22400,
+          "start_seconds": 0.0,
+          "end_seconds": 1.4
+        }
+      ],
+      "runtime_seconds": 0.23742724999999965,
+      "native_inference_seconds": 0.236346709,
+      "languages_reported": [
+        "en"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 10,
+        "token_p": {
+          "available_count": 10,
+          "min": 0.468376905,
+          "max": 0.999572873
+        },
+        "token_plog": {
+          "available_count": 10,
+          "min": -0.758481979,
+          "max": -0.000427246094
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.25326736e-07,
+          "max": 1.25326736e-07
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 10,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 3,
+            "edit_ratio": 0.6666666666666666
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 2,
+            "reference_count": 16,
+            "edit_ratio": 0.1875
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 3,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 16,
+            "edit_ratio": 0.0625
+          }
+        }
+      }
+    },
+    {
+      "id": "original_03",
+      "type": "approved_cc0_original",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.5131693750000004,
+      "native_inference_seconds": 0.509513875,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 22,
+        "token_p": {
+          "available_count": 22,
+          "min": 0.550138772,
+          "max": 0.999992371
+        },
+        "token_plog": {
+          "available_count": 22,
+          "min": -0.597584724,
+          "max": -7.62939453e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 0.000820460962,
+          "max": 0.000820460962
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 22,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.2222222222222222
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 3,
+            "reference_count": 67,
+            "edit_ratio": 0.04477611940298507
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "original_03",
+      "type": "approved_cc0_original",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.39783941700000014,
+      "native_inference_seconds": 0.394164958,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 22,
+        "token_p": {
+          "available_count": 22,
+          "min": 0.550138772,
+          "max": 0.999992371
+        },
+        "token_plog": {
+          "available_count": 22,
+          "min": -0.597584724,
+          "max": -7.62939453e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.95716883e-08,
+          "max": 1.95716883e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 22,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.2222222222222222
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 3,
+            "reference_count": 67,
+            "edit_ratio": 0.04477611940298507
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "original_03",
+      "type": "approved_cc0_original",
+      "language_requested": "en",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.3868914580000009,
+      "native_inference_seconds": 0.382798292,
+      "languages_reported": [
+        "en"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 21,
+        "token_p": {
+          "available_count": 21,
+          "min": 0.440239877,
+          "max": 0.999475598
+        },
+        "token_plog": {
+          "available_count": 21,
+          "min": -0.820435524,
+          "max": -0.000524520874
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.95716883e-08,
+          "max": 1.95716883e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 21,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.1111111111111111
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 2,
+            "reference_count": 67,
+            "edit_ratio": 0.029850746268656716
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "original_04",
+      "type": "approved_cc0_original",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 32640,
+      "samples": 32640,
+      "duration_seconds": 2.04,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 32640,
+          "start_seconds": 0.0,
+          "end_seconds": 2.04
+        }
+      ],
+      "runtime_seconds": 0.3825951249999999,
+      "native_inference_seconds": 0.380840875,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 12,
+        "token_p": {
+          "available_count": 12,
+          "min": 0.871380746,
+          "max": 0.999996185
+        },
+        "token_plog": {
+          "available_count": 12,
+          "min": -0.137676239,
+          "max": -3.81469727e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 4.99986345e-05,
+          "max": 4.99986345e-05
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 12,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 6,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 31,
+            "edit_ratio": 0.03225806451612903
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 6,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 30,
+            "edit_ratio": 0.03333333333333333
+          }
+        }
+      }
+    },
+    {
+      "id": "original_04",
+      "type": "approved_cc0_original",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 32640,
+      "samples": 32640,
+      "duration_seconds": 2.04,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 32640,
+          "start_seconds": 0.0,
+          "end_seconds": 2.04
+        }
+      ],
+      "runtime_seconds": 0.2641292919999998,
+      "native_inference_seconds": 0.262686292,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 12,
+        "token_p": {
+          "available_count": 12,
+          "min": 0.871380746,
+          "max": 0.999996185
+        },
+        "token_plog": {
+          "available_count": 12,
+          "min": -0.137676239,
+          "max": -3.81469727e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.33169555e-08,
+          "max": 1.33169555e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 12,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 6,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 31,
+            "edit_ratio": 0.03225806451612903
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 6,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 30,
+            "edit_ratio": 0.03333333333333333
+          }
+        }
+      }
+    },
+    {
+      "id": "original_04",
+      "type": "approved_cc0_original",
+      "language_requested": "en",
+      "status": "ok",
+      "samples_expected": 32640,
+      "samples": 32640,
+      "duration_seconds": 2.04,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 32640,
+          "start_seconds": 0.0,
+          "end_seconds": 2.04
+        }
+      ],
+      "runtime_seconds": 0.26858187499999886,
+      "native_inference_seconds": 0.267062166,
+      "languages_reported": [
+        "en"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 12,
+        "token_p": {
+          "available_count": 12,
+          "min": 0.850942016,
+          "max": 0.999994278
+        },
+        "token_plog": {
+          "available_count": 12,
+          "min": -0.161411285,
+          "max": -5.7220459e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.33169555e-08,
+          "max": 1.33169555e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 12,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 6,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 31,
+            "edit_ratio": 0.03225806451612903
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 6,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 30,
+            "edit_ratio": 0.03333333333333333
+          }
+        }
+      }
+    },
+    {
+      "id": "opus_ogg",
+      "type": "derived_lossy_opus_audio",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.5177458339999976,
+      "native_inference_seconds": 0.513975458,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 22,
+        "token_p": {
+          "available_count": 22,
+          "min": 0.486117035,
+          "max": 0.999980927
+        },
+        "token_plog": {
+          "available_count": 22,
+          "min": -0.721305847,
+          "max": -1.90734863e-05
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 0.000808064477,
+          "max": 0.000808064477
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 22,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.2222222222222222
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 3,
+            "reference_count": 67,
+            "edit_ratio": 0.04477611940298507
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "opus_ogg",
+      "type": "derived_lossy_opus_audio",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.39537887500000224,
+      "native_inference_seconds": 0.391612875,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 22,
+        "token_p": {
+          "available_count": 22,
+          "min": 0.486117035,
+          "max": 0.999980927
+        },
+        "token_plog": {
+          "available_count": 22,
+          "min": -0.721305847,
+          "max": -1.90734863e-05
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 2.48266367e-08,
+          "max": 2.48266367e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 22,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.2222222222222222
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 3,
+            "reference_count": 67,
+            "edit_ratio": 0.04477611940298507
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "aac_mp4",
+      "type": "derived_aac_generated_video",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.5163987089999971,
+      "native_inference_seconds": 0.512663625,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 22,
+        "token_p": {
+          "available_count": 22,
+          "min": 0.539684415,
+          "max": 0.999990463
+        },
+        "token_plog": {
+          "available_count": 22,
+          "min": -0.616770744,
+          "max": -9.53674316e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 0.00076597411,
+          "max": 0.00076597411
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 22,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.2222222222222222
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 3,
+            "reference_count": 67,
+            "edit_ratio": 0.04477611940298507
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "aac_mp4",
+      "type": "derived_aac_generated_video",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.40067074999999974,
+      "native_inference_seconds": 0.396684125,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 22,
+        "token_p": {
+          "available_count": 22,
+          "min": 0.539684415,
+          "max": 0.999990463
+        },
+        "token_plog": {
+          "available_count": 22,
+          "min": -0.616770744,
+          "max": -9.53674316e-06
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 2.02278478e-08,
+          "max": 2.02278478e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 22,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 2,
+            "substitutions": 2,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.2222222222222222
+          },
+          "character": {
+            "edits": 3,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 3,
+            "reference_count": 67,
+            "edit_ratio": 0.04477611940298507
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "noise_added",
+      "type": "derived_noise_added_speech",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.5047456670000017,
+      "native_inference_seconds": 0.50080725,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 21,
+        "token_p": {
+          "available_count": 21,
+          "min": 0.616811693,
+          "max": 0.999549985
+        },
+        "token_plog": {
+          "available_count": 21,
+          "min": -0.48319149,
+          "max": -0.000450134277
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 0.0013044466,
+          "max": 0.0013044466
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 21,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.1111111111111111
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 2,
+            "reference_count": 67,
+            "edit_ratio": 0.029850746268656716
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "noise_added",
+      "type": "derived_noise_added_speech",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 78880,
+      "samples": 78880,
+      "duration_seconds": 4.93,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 78880,
+          "start_seconds": 0.0,
+          "end_seconds": 4.93
+        }
+      ],
+      "runtime_seconds": 0.3876565840000019,
+      "native_inference_seconds": 0.38371975,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 21,
+        "token_p": {
+          "available_count": 21,
+          "min": 0.616811693,
+          "max": 0.999549985
+        },
+        "token_plog": {
+          "available_count": 21,
+          "min": -0.48319149,
+          "max": -0.000450134277
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 8.37942977e-08,
+          "max": 8.37942977e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 21,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 1,
+            "substitutions": 1,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.1111111111111111
+          },
+          "character": {
+            "edits": 2,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 2,
+            "reference_count": 67,
+            "edit_ratio": 0.029850746268656716
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 0,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 0,
+            "reference_count": 9,
+            "edit_ratio": 0.0
+          },
+          "character": {
+            "edits": 1,
+            "substitutions": 0,
+            "deletions": 0,
+            "insertions": 1,
+            "reference_count": 67,
+            "edit_ratio": 0.014925373134328358
+          }
+        }
+      }
+    },
+    {
+      "id": "constructed_long",
+      "type": "derived_three_cycle_concatenation",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 525120,
+      "samples": 525120,
+      "duration_seconds": 32.82,
+      "chunk_count": 2,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 480000,
+          "start_seconds": 0.0,
+          "end_seconds": 30.0
+        },
+        {
+          "start_sample": 480000,
+          "end_sample": 525120,
+          "start_seconds": 30.0,
+          "end_seconds": 32.82
+        }
+      ],
+      "runtime_seconds": 2.5573569579999997,
+      "native_inference_seconds": 2.50424967,
+      "languages_reported": [
+        "de",
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 11,
+        "token_count": 148,
+        "token_p": {
+          "available_count": 148,
+          "min": 0.34038946,
+          "max": 1
+        },
+        "token_plog": {
+          "available_count": 148,
+          "min": -1.07766485,
+          "max": 0
+        },
+        "segment_no_speech_prob": {
+          "available_count": 11,
+          "min": 0.00044297456,
+          "max": 0.0011727839
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 11,
+        "tokens_with_valid_timestamps": 148,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 20,
+            "substitutions": 12,
+            "deletions": 8,
+            "insertions": 0,
+            "reference_count": 69,
+            "edit_ratio": 0.2898550724637681
+          },
+          "character": {
+            "edits": 72,
+            "substitutions": 4,
+            "deletions": 59,
+            "insertions": 9,
+            "reference_count": 476,
+            "edit_ratio": 0.15126050420168066
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 11,
+            "substitutions": 3,
+            "deletions": 8,
+            "insertions": 0,
+            "reference_count": 69,
+            "edit_ratio": 0.15942028985507245
+          },
+          "character": {
+            "edits": 61,
+            "substitutions": 0,
+            "deletions": 60,
+            "insertions": 1,
+            "reference_count": 473,
+            "edit_ratio": 0.12896405919661733
+          }
+        }
+      }
+    },
+    {
+      "id": "constructed_long",
+      "type": "derived_three_cycle_concatenation",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 525120,
+      "samples": 525120,
+      "duration_seconds": 32.82,
+      "chunk_count": 2,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 480000,
+          "start_seconds": 0.0,
+          "end_seconds": 30.0
+        },
+        {
+          "start_sample": 480000,
+          "end_sample": 525120,
+          "start_seconds": 30.0,
+          "end_seconds": 32.82
+        }
+      ],
+      "runtime_seconds": 2.344674083000001,
+      "native_inference_seconds": 2.28974458,
+      "languages_reported": [
+        "de",
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 11,
+        "token_count": 148,
+        "token_p": {
+          "available_count": 148,
+          "min": 0.34038946,
+          "max": 1
+        },
+        "token_plog": {
+          "available_count": 148,
+          "min": -1.07766485,
+          "max": 0
+        },
+        "segment_no_speech_prob": {
+          "available_count": 11,
+          "min": 3.05944603e-09,
+          "max": 3.50402303e-08
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 11,
+        "tokens_with_valid_timestamps": 148,
+        "dtw_available": false
+      },
+      "provisional_label_correspondence": {
+        "raw_case_punctuation_sensitive": {
+          "word": {
+            "edits": 20,
+            "substitutions": 12,
+            "deletions": 8,
+            "insertions": 0,
+            "reference_count": 69,
+            "edit_ratio": 0.2898550724637681
+          },
+          "character": {
+            "edits": 72,
+            "substitutions": 4,
+            "deletions": 59,
+            "insertions": 9,
+            "reference_count": 476,
+            "edit_ratio": 0.15126050420168066
+          }
+        },
+        "case_punctuation_only": {
+          "word": {
+            "edits": 11,
+            "substitutions": 3,
+            "deletions": 8,
+            "insertions": 0,
+            "reference_count": 69,
+            "edit_ratio": 0.15942028985507245
+          },
+          "character": {
+            "edits": 61,
+            "substitutions": 0,
+            "deletions": 60,
+            "insertions": 1,
+            "reference_count": 473,
+            "edit_ratio": 0.12896405919661733
+          }
+        }
+      }
+    },
+    {
+      "id": "silence",
+      "type": "mathematical_zero_pcm",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 80000,
+      "samples": 80000,
+      "duration_seconds": 5.0,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 80000,
+          "start_seconds": 0.0,
+          "end_seconds": 5.0
+        }
+      ],
+      "runtime_seconds": 0.30185362500000323,
+      "native_inference_seconds": 0.297880625,
+      "languages_reported": [
+        "en"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 0,
+        "token_count": 0,
+        "token_p": {
+          "available_count": 0,
+          "min": null,
+          "max": null
+        },
+        "token_plog": {
+          "available_count": 0,
+          "min": null,
+          "max": null
+        },
+        "segment_no_speech_prob": {
+          "available_count": 0,
+          "min": null,
+          "max": null
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 0,
+        "tokens_with_valid_timestamps": 0,
+        "dtw_available": false
+      },
+      "control_output": {
+        "empty": true,
+        "character_count": 0,
+        "alphabetic_character_count": 0
+      }
+    },
+    {
+      "id": "silence",
+      "type": "mathematical_zero_pcm",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 80000,
+      "samples": 80000,
+      "duration_seconds": 5.0,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 80000,
+          "start_seconds": 0.0,
+          "end_seconds": 5.0
+        }
+      ],
+      "runtime_seconds": 0.19390604199999828,
+      "native_inference_seconds": 0.190357042,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 5,
+        "token_p": {
+          "available_count": 5,
+          "min": 0.329164058,
+          "max": 0.994212747
+        },
+        "token_plog": {
+          "available_count": 5,
+          "min": -1.11119902,
+          "max": -0.00580406189
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.37817608e-07,
+          "max": 1.37817608e-07
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 5,
+        "dtw_available": false
+      },
+      "control_output": {
+        "empty": false,
+        "character_count": 13,
+        "alphabetic_character_count": 10
+      }
+    },
+    {
+      "id": "noise_only",
+      "type": "deterministic_noise_pcm",
+      "language_requested": "auto",
+      "status": "ok",
+      "samples_expected": 80000,
+      "samples": 80000,
+      "duration_seconds": 5.0,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 80000,
+          "start_seconds": 0.0,
+          "end_seconds": 5.0
+        }
+      ],
+      "runtime_seconds": 0.3232025000000007,
+      "native_inference_seconds": 0.319371667,
+      "languages_reported": [
+        "other_or_unknown"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 2,
+        "token_count": 5,
+        "token_p": {
+          "available_count": 5,
+          "min": 0.000226146149,
+          "max": 0.86682713
+        },
+        "token_plog": {
+          "available_count": 5,
+          "min": -8.39432907,
+          "max": -0.142915726
+        },
+        "segment_no_speech_prob": {
+          "available_count": 2,
+          "min": 0.187029868,
+          "max": 0.187029868
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 2,
+        "tokens_with_valid_timestamps": 5,
+        "dtw_available": false
+      },
+      "control_output": {
+        "empty": false,
+        "character_count": 4,
+        "alphabetic_character_count": 2
+      }
+    },
+    {
+      "id": "noise_only",
+      "type": "deterministic_noise_pcm",
+      "language_requested": "de",
+      "status": "ok",
+      "samples_expected": 80000,
+      "samples": 80000,
+      "duration_seconds": 5.0,
+      "chunk_count": 1,
+      "request_offsets": [
+        {
+          "start_sample": 0,
+          "end_sample": 80000,
+          "start_seconds": 0.0,
+          "end_seconds": 5.0
+        }
+      ],
+      "runtime_seconds": 0.2837475410000003,
+      "native_inference_seconds": 0.279904375,
+      "languages_reported": [
+        "de"
+      ],
+      "diagnostics": {
+        "scores_calibrated": false,
+        "abstention_policy": null,
+        "segment_count": 1,
+        "token_count": 12,
+        "token_p": {
+          "available_count": 12,
+          "min": 0.128230855,
+          "max": 0.99997139
+        },
+        "token_plog": {
+          "available_count": 12,
+          "min": -2.05392313,
+          "max": -2.86102295e-05
+        },
+        "segment_no_speech_prob": {
+          "available_count": 1,
+          "min": 1.10780556e-05,
+          "max": 1.10780556e-05
+        },
+        "timestamp_units": "estimated_centiseconds_request_local",
+        "segments_with_valid_timestamps": 1,
+        "tokens_with_valid_timestamps": 12,
+        "dtw_available": false
+      },
+      "control_output": {
+        "empty": false,
+        "character_count": 28,
+        "alphabetic_character_count": 19
+      }
+    }
+  ],
+  "runtime_seconds": 24.962257708000003,
+  "model": {
+    "ggml_file": "ggml-large-v3.bin",
+    "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2",
+    "bytes": 3095033483,
+    "ggml_ftype": 1,
+    "quantization_version": 0
+  },
+  "whisper_source_commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037",
+  "build": "Debug",
+  "observed_device": "Apple M5 Max",
+  "source_version": "thorstenMueller/Thorsten-Voice@29d0c153c55d8ffaa0ebf8ed1ecc879bff9fdf27",
+  "derived_measurements": {
+    "original_samples": [
+      41120,
+      22400,
+      78880,
+      32640
+    ],
+    "constructed_samples": 525120,
+    "constructed_seconds": 32.82,
+    "noise_added_signal_rms": 0.06655934202329791,
+    "noise_added_actual_noise_rms": 0.03742906858862625,
+    "noise_added_actual_snr_db": 5.000000001984784
+  },
+  "network_probe": {
+    "connect_result": -1,
+    "errno": 1,
+    "meaning": "EPERM under offline.sb"
+  },
+  "score_interpretation": "Uncalibrated emitted-token ranges include native special/timestamp/end-of-text tokens; not word confidence or acoustic truth.",
+  "verified_media": {
+    "opus_ogg": {
+      "audio_codec": "opus",
+      "sample_rate": 48000,
+      "channels": 1
+    },
+    "aac_mp4": {
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "sample_rate": 22050,
+      "channels": 1
+    },
+    "constructed_long": {
+      "audio_codec": "pcm_f32le",
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_seconds": 32.82
+    }
+  },
+  "consent_boundary_smoke": {
+    "exit": 1,
+    "status": "failed",
+    "failure_stage": "preparation_or_model_load",
+    "model_loaded": false,
+    "case_rows": 0
+  }
+}

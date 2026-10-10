@@ -2,6 +2,8 @@
 
 Research date: 2026-10-11. Scope: external publisher documentation, licenses, release metadata and HTTP HEAD access facts. This report supports a source-specific acquisition decision for [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12); it is not acquisition approval, a qualification result or a release threshold.
 
+The subsequent user instruction to work without a human in the loop supersedes this report's proposed new live-review procedure. Its publisher/source facts and reference-quality warnings remain; no review is fabricated. See [the current autonomous artifact](whisper-german-fidelity.md) for the approved acquisitions, exercised controls and provisional-label policy.
+
 ## Decision summary
 
 **A genuinely small, public, explicitly licensed acquisition choice is available, but only as a read-speech control:** four original human recordings from Thorsten-Voice's publisher repository, pinned below, totaling **484,236 bytes**. All four pinned audio URLs answered HEAD with HTTP 200, `audio/wav`, and matching `Content-Length`. No audio payload was retrieved. The publisher distinguishes these `-gt.wav` original recordings from the surrounding synthesized/vocoder samples. These four controls do **not** cover spontaneous fillers, repetitions, self-corrections, unclear spans, mixed-language speech, long recordings or dialect fidelity.

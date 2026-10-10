@@ -2,6 +2,8 @@
 
 Research date: 2026-10-11. Scope: the Whisper-only investigation in [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12). The approved full GGML large-v3 model and two independent human reviewers do not authorize acquisition of any corpus. This report proposes source-specific acquisition choices; no audio, model, corpus-reference archive, or private recording was acquired, played, streamed, or transcribed. Documentation and publisher metadata only were inspected. No tests/builds were run and no qualification result is claimed.
 
+The subsequent user instruction to work without a human in the loop supersedes this report's proposed new live-review procedure. Existing published human annotation still needs honest provenance and reference-quality limits; no review or dialect competence is fabricated. See [the current autonomous artifact](whisper-german-fidelity.md) for the current scope and exercised evidence.
+
 ## Decision summary
 
 There is no researched source that simultaneously provides unrestricted, immediately downloadable, contemporary natural conversation across all German dialects with guaranteed faithful human references. Two bounded acquisition proposals are available:

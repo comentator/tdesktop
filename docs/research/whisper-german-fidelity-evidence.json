@@ -254,8 +254,10 @@
       }
     ],
     "acquired_bytes": 484236,
-    "inference_run": false,
-    "independent_references_supplied": false
+    "inference_run": true,
+    "independent_references_supplied": false,
+    "new_live_reviews_waived": true
   },
-  "remaining_qualification": "Independent actual-speech references and authorized full-coverage recordings unavailable; no calibrated unclear-span pipeline or production approval."
+  "remaining_qualification": "Reliable actual-speech/intelligibility references and authorized full-coverage recordings are unavailable; live-review gates were waived, not fabricated. Current raw decoder/naive windowing and [unclear] handling are not qualified.",
+  "autonomous_evidence": "whisper-german-autonomous-evidence.json"
 }

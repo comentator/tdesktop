@@ -2,7 +2,7 @@
 
 Throwaway artifact for [Qualify native macOS runtime and model candidates](https://github.com/comentator/tdesktop/issues/11). Not Telegram integration, a selected backend, or production-ready transcription. Native C/C++ performs inference; Python only prepares explicitly approved synthetic fixtures, supervises native processes, and compares frontend/tokenizer arithmetic.
 
-This fidelity branch additionally supports [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12) with the user-selected full Whisper large-v3 only. Read `docs/research/whisper-german-fidelity.md` from the repository root for its separate model/audio consent, Whisper-only build, blind-reference gate and actual silence failure. The original multi-engine observations below remain historical evidence, not a new comparison or approval of this pipeline.
+This fidelity branch additionally supports [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12) autonomously with the user-selected full Whisper large-v3 only. Read `docs/research/whisper-german-fidelity.md` from the repository root for its separate model/audio consent, Whisper-only build, provisional-label policy and actual silence/noise failures. `qualify_german.py` uses only the four hash-verified approved originals and derived controls, never downloads assets or captures a microphone, and publishes no raw inference content. The original multi-engine observations below remain historical evidence, not a new comparison or approval of this pipeline.
 
 ## Consent and prerequisites
 
