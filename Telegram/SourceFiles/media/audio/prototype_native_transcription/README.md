@@ -2,6 +2,8 @@
 
 Throwaway artifact for [Qualify native macOS runtime and model candidates](https://github.com/comentator/tdesktop/issues/11). Not Telegram integration, a selected backend, or production-ready transcription. Native C/C++ performs inference; Python only prepares explicitly approved synthetic fixtures, supervises native processes, and compares frontend/tokenizer arithmetic.
 
+This fidelity branch additionally supports [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12) with the user-selected full Whisper large-v3 only. Read `docs/research/whisper-german-fidelity.md` from the repository root for its separate model/audio consent, Whisper-only build, blind-reference gate and actual silence failure. The original multi-engine observations below remain historical evidence, not a new comparison or approval of this pipeline.
+
 ## Consent and prerequisites
 
 Do not acquire models, voices or private audio implicitly. This exercise was approved to read existing GGML large-v3-turbo, CT2 large-v3 and sherpa Parakeet TDT0.6B-v3-int8 caches, fetch pinned source/build dependencies, and synthesize German/English fixtures using already available macOS Anna/Samantha voices. No installed application was launched or modified. No new model weights or external evaluation audio were acquired.
@@ -55,7 +57,7 @@ python3 "$PROTO/controls.py" --build "$BUILD" --assets "$ASSETS" --output "$OUTP
 
 ## Protocol and evidence limits
 
-Native helpers take `RUN auto|de|en N`, newline and exactlyN little-endian float32 samples at16kHz, max480000samples/30sec. `LOAD`, `UNLOAD`, `QUIT` control actual model ownership. Success JSON contains actual text/language, elapsed time, completed-request count and own-process resident/peak bytes. CT2 mode argument is `float32` or explicit `int8_float32`, not `cpu`; the exercised configuration is float32. Parakeet rejects forced languages, never treats the option as silently successful; its returned language label was empty.
+Native helpers take `RUN LANGUAGE N`, newline and exactly N little-endian float32 samples at 16 kHz, max 480000 samples/30 sec. Whisper accepts `auto` or any language identifier recognized by the pinned native API; the other probes remain limited to `auto`, `de`, `en`. `LOAD`, `UNLOAD`, `QUIT` control actual model ownership. Success JSON contains actual text/language, elapsed time, completed-request count and own-process resident/peak bytes. This branch's Whisper additionally exposes byte-exact hexadecimal transcript/segment/token bytes, uncalibrated native scores and estimated request-local centisecond timings; it provides no abstention policy. CT2 mode argument is `float32` or explicit `int8_float32`, not `cpu`; the exercised configuration is float32. Parakeet rejects forced languages, never treats the option as silently successful; its returned language label was empty.
 
 FFmpeg decodes approved media into bounded PCM pipe reads. A35.56sec Opus fixture crosses the30sec submission boundary. This is naive disjoint windowing, not a fidelity-qualified long-audio pipeline. No feature-owned decoded-audio temporary files, VAD, hallucination suppression, uncertainty/`[unclear]` policy, language-confidence threshold, diarization or video-image inference is supplied.
 

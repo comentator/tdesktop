@@ -1,0 +1,261 @@
+{
+  "ticket": "https://github.com/comentator/tdesktop/issues/12",
+  "scope": "Whisper-only; not qualified",
+  "model": {
+    "file": "ggml-large-v3.bin",
+    "bytes": 3095033483,
+    "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2",
+    "ggml_ftype": 1,
+    "quantization_version": 0
+  },
+  "whisper_source_commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037",
+  "build": "Debug",
+  "observed_device": "Apple M5 Max",
+  "test_input": "Mathematically generated five-second zero PCM, 16kHz mono float32",
+  "silence_controls": [
+    {
+      "backend": "metal",
+      "ready": {
+        "state": "ready",
+        "seconds": 10.7993,
+        "resident_bytes": 3686612992,
+        "peak_resident_bytes": 3686612992
+      },
+      "exit": 0,
+      "requests": [
+        {
+          "requested_language": "auto",
+          "status": "ok",
+          "nonempty_text_on_silence": false,
+          "segments": 0,
+          "tokens": 0,
+          "no_speech_probabilities": [],
+          "native_probability_range": null,
+          "seconds": 0.315556,
+          "configuration": {
+            "strategy": "greedy",
+            "threads": 8,
+            "translate": false,
+            "no_context": true,
+            "token_timestamps": true,
+            "temperature_inc": 0,
+            "entropy_thold": 2.4,
+            "logprob_thold": -1,
+            "no_speech_thold": 0.6,
+            "suppress_blank": true,
+            "suppress_nst": false
+          }
+        },
+        {
+          "requested_language": "de",
+          "status": "ok",
+          "nonempty_text_on_silence": true,
+          "segments": 1,
+          "tokens": 5,
+          "no_speech_probabilities": [
+            1.37817608e-07
+          ],
+          "native_probability_range": [
+            0.329164058,
+            0.994212747
+          ],
+          "seconds": 0.189199,
+          "configuration": {
+            "strategy": "greedy",
+            "threads": 8,
+            "translate": false,
+            "no_context": true,
+            "token_timestamps": true,
+            "temperature_inc": 0,
+            "entropy_thold": 2.4,
+            "logprob_thold": -1,
+            "no_speech_thold": 0.6,
+            "suppress_blank": true,
+            "suppress_nst": false
+          }
+        },
+        {
+          "requested_language": "not-a-language",
+          "status": "error",
+          "nonempty_text_on_silence": false,
+          "segments": 0,
+          "tokens": 0,
+          "no_speech_probabilities": [],
+          "native_probability_range": null,
+          "seconds": null,
+          "configuration": null
+        }
+      ]
+    },
+    {
+      "backend": "cpu",
+      "ready": {
+        "state": "ready",
+        "seconds": 0.68715,
+        "resident_bytes": 3536830464,
+        "peak_resident_bytes": 3536830464
+      },
+      "exit": 0,
+      "requests": [
+        {
+          "requested_language": "auto",
+          "status": "ok",
+          "nonempty_text_on_silence": false,
+          "segments": 0,
+          "tokens": 0,
+          "no_speech_probabilities": [],
+          "native_probability_range": null,
+          "seconds": 62.1813,
+          "configuration": {
+            "strategy": "greedy",
+            "threads": 8,
+            "translate": false,
+            "no_context": true,
+            "token_timestamps": true,
+            "temperature_inc": 0,
+            "entropy_thold": 2.4,
+            "logprob_thold": -1,
+            "no_speech_thold": 0.6,
+            "suppress_blank": true,
+            "suppress_nst": false
+          }
+        },
+        {
+          "requested_language": "de",
+          "status": "ok",
+          "nonempty_text_on_silence": true,
+          "segments": 1,
+          "tokens": 5,
+          "no_speech_probabilities": [
+            1.35314863e-07
+          ],
+          "native_probability_range": [
+            0.327797621,
+            0.994171023
+          ],
+          "seconds": 32.5253,
+          "configuration": {
+            "strategy": "greedy",
+            "threads": 8,
+            "translate": false,
+            "no_context": true,
+            "token_timestamps": true,
+            "temperature_inc": 0,
+            "entropy_thold": 2.4,
+            "logprob_thold": -1,
+            "no_speech_thold": 0.6,
+            "suppress_blank": true,
+            "suppress_nst": false
+          }
+        },
+        {
+          "requested_language": "not-a-language",
+          "status": "error",
+          "nonempty_text_on_silence": false,
+          "segments": 0,
+          "tokens": 0,
+          "no_speech_probabilities": [],
+          "native_probability_range": null,
+          "seconds": null,
+          "configuration": null
+        }
+      ]
+    }
+  ],
+  "human_audio": {
+    "files": [
+      {
+        "file": "sample01-gt.wav",
+        "bytes": 113782,
+        "sha256": "09fb12ff218399a4e4eab6c592eb36bbe4743db9ce5249742129bc3add734ca1",
+        "git_blob_sha1": "a42e95b3bdb2fe930265f9543ff48eb89652ee26",
+        "url": "https://raw.githubusercontent.com/thorstenMueller/Thorsten-Voice/29d0c153c55d8ffaa0ebf8ed1ecc879bff9fdf27/docs/samples/sample01-gt.wav",
+        "license": "CC0-1.0",
+        "media": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.569977"
+          }
+        }
+      },
+      {
+        "file": "sample02-gt.wav",
+        "bytes": 62186,
+        "sha256": "ba2e4af63d84218f75e13bf71e0608909ce8ee05449510bd7aa71792fb7d09b6",
+        "git_blob_sha1": "8a7dccc06eb7da27f147d1128b507fd16d2d1cdd",
+        "url": "https://raw.githubusercontent.com/thorstenMueller/Thorsten-Voice/29d0c153c55d8ffaa0ebf8ed1ecc879bff9fdf27/docs/samples/sample02-gt.wav",
+        "license": "CC0-1.0",
+        "media": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "1.400000"
+          }
+        }
+      },
+      {
+        "file": "sample03-gt.wav",
+        "bytes": 217858,
+        "sha256": "1892697190fe190f41037a1c5ac4e02b60d6f4a490408ab3b1b88a490b3b6750",
+        "git_blob_sha1": "9b26b62b4c5e58a9634a67c5ab8702964d8a5297",
+        "url": "https://raw.githubusercontent.com/thorstenMueller/Thorsten-Voice/29d0c153c55d8ffaa0ebf8ed1ecc879bff9fdf27/docs/samples/sample03-gt.wav",
+        "license": "CC0-1.0",
+        "media": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "4.929977"
+          }
+        }
+      },
+      {
+        "file": "sample04-gt.wav",
+        "bytes": 90410,
+        "sha256": "26677c36031105ee307c5f819d7a4dfa2790d27b2d2f03012c306019b9d4a771",
+        "git_blob_sha1": "8cde068753b2edfc89bc60711d2fcbb9f1a42470",
+        "url": "https://raw.githubusercontent.com/thorstenMueller/Thorsten-Voice/29d0c153c55d8ffaa0ebf8ed1ecc879bff9fdf27/docs/samples/sample04-gt.wav",
+        "license": "CC0-1.0",
+        "media": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "22050",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "2.040000"
+          }
+        }
+      }
+    ],
+    "acquired_bytes": 484236,
+    "inference_run": false,
+    "independent_references_supplied": false
+  },
+  "remaining_qualification": "Independent actual-speech references and authorized full-coverage recordings unavailable; no calibrated unclear-span pipeline or production approval."
+}
