@@ -1,0 +1,1257 @@
+{
+  "host": {
+    "architecture": "arm64",
+    "macos": "27.0.1"
+  },
+  "scope": "synthetic smoke only; Debug helpers; no German-quality or shipping certification",
+  "raw_audio_transcripts_and_logs": "retained locally, not exported",
+  "cells": [
+    {
+      "engine": "whisper_helper",
+      "backend_requested": "metal",
+      "load": {
+        "state": "ready",
+        "seconds": 8.82197,
+        "resident_bytes": 1929166848,
+        "peak_resident_bytes": 1929166848
+      },
+      "cases": [
+        {
+          "input": "de.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 0.728235,
+              "calls": 1,
+              "resident_bytes": 1946271744,
+              "peak_resident_bytes": 1946271744,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "de.wav",
+          "requested_language": "de",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 0.174516,
+              "calls": 2,
+              "resident_bytes": 1946304512,
+              "peak_resident_bytes": 1946435584,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 0.249846,
+              "calls": 3,
+              "resident_bytes": 1946353664,
+              "peak_resident_bytes": 1946484736,
+              "text_characters": 85,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "en",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 0.156221,
+              "calls": 4,
+              "resident_bytes": 1946353664,
+              "peak_resident_bytes": 1946517504,
+              "text_characters": 85,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "voice-like.ogg",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 0.2691,
+              "calls": 5,
+              "resident_bytes": 1946435584,
+              "peak_resident_bytes": 1946517504,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "video-like.mp4",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 0.270065,
+              "calls": 6,
+              "resident_bytes": 1946435584,
+              "peak_resident_bytes": 1946599424,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "silence.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 0.203689,
+              "calls": 7,
+              "resident_bytes": 1946435584,
+              "peak_resident_bytes": 1946599424,
+              "text_characters": 4,
+              "has_text": true
+            }
+          ]
+        }
+      ],
+      "warm_after_two_seconds_idle": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 0.286256,
+          "calls": 8,
+          "resident_bytes": 1946435584,
+          "peak_resident_bytes": 1946599424,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "unload": {
+        "state": "unloaded",
+        "seconds": 0,
+        "resident_bytes": 268926976,
+        "peak_resident_bytes": 1946599424
+      },
+      "reload": {
+        "state": "ready",
+        "seconds": 5.86025,
+        "resident_bytes": 1947484160,
+        "peak_resident_bytes": 1947484160
+      },
+      "after_reload": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 0.286445,
+          "calls": 9,
+          "resident_bytes": 1955201024,
+          "peak_resident_bytes": 1955201024,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "while_unloaded": [
+        {
+          "status": "error"
+        }
+      ],
+      "network_probe_exit": 0,
+      "network_probe": {
+        "connect_result": -1,
+        "errno": 1
+      },
+      "submitted_request_termination": {
+        "exit": -15,
+        "termination_seconds": 0.018892416999999995,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "injected_pressure_termination": {
+        "exit": 75,
+        "termination_seconds": 0.01892125000000533,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "in_backend_running_acknowledgement": false,
+      "injected_native_fault": {
+        "exit": -11,
+        "supervisor_survived": true,
+        "note": "intentional native SIGSEGV, not a spontaneous model failure"
+      }
+    },
+    {
+      "engine": "whisper_helper",
+      "backend_requested": "cpu",
+      "load": {
+        "state": "ready",
+        "seconds": 0.43069,
+        "resident_bytes": 1771683840,
+        "peak_resident_bytes": 1771683840
+      },
+      "cases": [
+        {
+          "input": "de.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 63.7703,
+              "calls": 1,
+              "resident_bytes": 1934262272,
+              "peak_resident_bytes": 1934508032,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "de.wav",
+          "requested_language": "de",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 33.1418,
+              "calls": 2,
+              "resident_bytes": 1934295040,
+              "peak_resident_bytes": 1934557184,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 66.6969,
+              "calls": 3,
+              "resident_bytes": 1934180352,
+              "peak_resident_bytes": 1934557184,
+              "text_characters": 85,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "en",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 33.462,
+              "calls": 4,
+              "resident_bytes": 1934196736,
+              "peak_resident_bytes": 1934557184,
+              "text_characters": 85,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "voice-like.ogg",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 68.49,
+              "calls": 5,
+              "resident_bytes": 1934245888,
+              "peak_resident_bytes": 1934557184,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "video-like.mp4",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 67.4096,
+              "calls": 6,
+              "resident_bytes": 1934278656,
+              "peak_resident_bytes": 1934557184,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "silence.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 67.9279,
+              "calls": 7,
+              "resident_bytes": 1934295040,
+              "peak_resident_bytes": 1934557184,
+              "text_characters": 4,
+              "has_text": true
+            }
+          ]
+        }
+      ],
+      "warm_after_two_seconds_idle": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 69.1651,
+          "calls": 8,
+          "resident_bytes": 1934278656,
+          "peak_resident_bytes": 1934557184,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "unload": {
+        "state": "unloaded",
+        "seconds": 0,
+        "resident_bytes": 163037184,
+        "peak_resident_bytes": 1934557184
+      },
+      "reload": {
+        "state": "ready",
+        "seconds": 0.394272,
+        "resident_bytes": 1838153728,
+        "peak_resident_bytes": 1934557184
+      },
+      "after_reload": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 69.9498,
+          "calls": 9,
+          "resident_bytes": 1942192128,
+          "peak_resident_bytes": 1942454272,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "while_unloaded": [
+        {
+          "status": "error"
+        }
+      ],
+      "network_probe_exit": 0,
+      "network_probe": {
+        "connect_result": -1,
+        "errno": 1
+      },
+      "submitted_request_termination": {
+        "exit": -15,
+        "termination_seconds": 0.03892504199995983,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "injected_pressure_termination": {
+        "exit": 75,
+        "termination_seconds": 0.038663791999965724,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "in_backend_running_acknowledgement": false,
+      "injected_native_fault": {
+        "exit": -11,
+        "supervisor_survived": true,
+        "note": "intentional native SIGSEGV, not a spontaneous model failure"
+      }
+    },
+    {
+      "engine": "ct2_helper",
+      "backend_requested": "float32",
+      "load": {
+        "state": "ready",
+        "seconds": 1.6561,
+        "resident_bytes": 7031242752,
+        "peak_resident_bytes": 7031242752
+      },
+      "cases": [
+        {
+          "input": "de.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 4.9583,
+              "calls": 1,
+              "resident_bytes": 7196033024,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "de.wav",
+          "requested_language": "de",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 4.57401,
+              "calls": 2,
+              "resident_bytes": 7173996544,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 4.20318,
+              "calls": 3,
+              "resident_bytes": 7163510784,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 85,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "en",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 4.01729,
+              "calls": 4,
+              "resident_bytes": 7136952320,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 85,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "voice-like.ogg",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 4.78911,
+              "calls": 5,
+              "resident_bytes": 7124074496,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "video-like.mp4",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "de",
+              "seconds": 4.82311,
+              "calls": 6,
+              "resident_bytes": 7101087744,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 89,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "silence.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "en",
+              "seconds": 2.89962,
+              "calls": 7,
+              "resident_bytes": 7074512896,
+              "peak_resident_bytes": 7652556800,
+              "text_characters": 11,
+              "has_text": true
+            }
+          ]
+        }
+      ],
+      "warm_after_two_seconds_idle": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 5.04415,
+          "calls": 8,
+          "resident_bytes": 7050788864,
+          "peak_resident_bytes": 7652556800,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "unload": {
+        "state": "unloaded",
+        "seconds": 0,
+        "resident_bytes": 143851520,
+        "peak_resident_bytes": 7652556800
+      },
+      "reload": {
+        "state": "ready",
+        "seconds": 1.78968,
+        "resident_bytes": 7127629824,
+        "peak_resident_bytes": 7652556800
+      },
+      "after_reload": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 4.96759,
+          "calls": 9,
+          "resident_bytes": 7216136192,
+          "peak_resident_bytes": 7745585152,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "while_unloaded": [
+        {
+          "status": "error"
+        }
+      ],
+      "network_probe_exit": 0,
+      "network_probe": {
+        "connect_result": -1,
+        "errno": 1
+      },
+      "submitted_request_termination": {
+        "exit": -15,
+        "termination_seconds": 0.07595541699993191,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "injected_pressure_termination": {
+        "exit": 75,
+        "termination_seconds": 0.07531474999996135,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "in_backend_running_acknowledgement": false,
+      "injected_native_fault": {
+        "exit": -11,
+        "supervisor_survived": true,
+        "note": "intentional native SIGSEGV, not a spontaneous model failure"
+      }
+    },
+    {
+      "engine": "sherpa_helper",
+      "backend_requested": "cpu",
+      "load": {
+        "state": "ready",
+        "seconds": 0.627993,
+        "resident_bytes": 1872969728,
+        "peak_resident_bytes": 1872969728
+      },
+      "cases": [
+        {
+          "input": "de.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.223999,
+              "calls": 1,
+              "resident_bytes": 1921941504,
+              "peak_resident_bytes": 1921941504,
+              "text_characters": 88,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "de.wav",
+          "requested_language": "de",
+          "results": [
+            {
+              "status": "error"
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.164943,
+              "calls": 2,
+              "resident_bytes": 1922318336,
+              "peak_resident_bytes": 1922318336,
+              "text_characters": 84,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "en",
+          "results": [
+            {
+              "status": "error"
+            }
+          ]
+        },
+        {
+          "input": "voice-like.ogg",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.220476,
+              "calls": 3,
+              "resident_bytes": 1969651712,
+              "peak_resident_bytes": 1969651712,
+              "text_characters": 88,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "video-like.mp4",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.225239,
+              "calls": 4,
+              "resident_bytes": 1969668096,
+              "peak_resident_bytes": 1969668096,
+              "text_characters": 88,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "silence.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.164738,
+              "calls": 5,
+              "resident_bytes": 1979105280,
+              "peak_resident_bytes": 1979105280,
+              "text_characters": 0,
+              "has_text": false
+            }
+          ]
+        }
+      ],
+      "warm_after_two_seconds_idle": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.223131,
+          "calls": 6,
+          "resident_bytes": 1979105280,
+          "peak_resident_bytes": 1979105280,
+          "text_characters": 88,
+          "has_text": true
+        }
+      ],
+      "unload": {
+        "state": "unloaded",
+        "seconds": 0,
+        "resident_bytes": 679936000,
+        "peak_resident_bytes": 1979121664
+      },
+      "reload": {
+        "state": "ready",
+        "seconds": 0.580695,
+        "resident_bytes": 1886224384,
+        "peak_resident_bytes": 1979121664
+      },
+      "after_reload": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.21781,
+          "calls": 7,
+          "resident_bytes": 1933213696,
+          "peak_resident_bytes": 1979121664,
+          "text_characters": 88,
+          "has_text": true
+        }
+      ],
+      "while_unloaded": [
+        {
+          "status": "error"
+        }
+      ],
+      "network_probe_exit": 0,
+      "network_probe": {
+        "connect_result": -1,
+        "errno": 1
+      },
+      "submitted_request_termination": {
+        "exit": -15,
+        "termination_seconds": 0.03505862500003332,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "injected_pressure_termination": {
+        "exit": 75,
+        "termination_seconds": 0.03889012499996625,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "in_backend_running_acknowledgement": false,
+      "injected_native_fault": {
+        "exit": -11,
+        "supervisor_survived": true,
+        "note": "intentional native SIGSEGV, not a spontaneous model failure"
+      }
+    },
+    {
+      "engine": "sherpa_helper",
+      "backend_requested": "coreml",
+      "load": {
+        "state": "ready",
+        "seconds": 3.18782,
+        "resident_bytes": 1878638592,
+        "peak_resident_bytes": 1878638592
+      },
+      "cases": [
+        {
+          "input": "de.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.640312,
+              "calls": 1,
+              "resident_bytes": 3164733440,
+              "peak_resident_bytes": 3164733440,
+              "text_characters": 88,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "de.wav",
+          "requested_language": "de",
+          "results": [
+            {
+              "status": "error"
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.25823,
+              "calls": 2,
+              "resident_bytes": 3187834880,
+              "peak_resident_bytes": 3187834880,
+              "text_characters": 84,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "en.wav",
+          "requested_language": "en",
+          "results": [
+            {
+              "status": "error"
+            }
+          ]
+        },
+        {
+          "input": "voice-like.ogg",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.356651,
+              "calls": 3,
+              "resident_bytes": 3369631744,
+              "peak_resident_bytes": 3369631744,
+              "text_characters": 88,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "video-like.mp4",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.302742,
+              "calls": 4,
+              "resident_bytes": 3369910272,
+              "peak_resident_bytes": 3369910272,
+              "text_characters": 88,
+              "has_text": true
+            }
+          ]
+        },
+        {
+          "input": "silence.wav",
+          "requested_language": "auto",
+          "results": [
+            {
+              "status": "ok",
+              "language": "",
+              "seconds": 0.262574,
+              "calls": 5,
+              "resident_bytes": 3377987584,
+              "peak_resident_bytes": 3377987584,
+              "text_characters": 0,
+              "has_text": false
+            }
+          ]
+        }
+      ],
+      "warm_after_two_seconds_idle": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.350092,
+          "calls": 6,
+          "resident_bytes": 3385163776,
+          "peak_resident_bytes": 3385163776,
+          "text_characters": 88,
+          "has_text": true
+        }
+      ],
+      "unload": {
+        "state": "unloaded",
+        "seconds": 0,
+        "resident_bytes": 1654013952,
+        "peak_resident_bytes": 3385180160
+      },
+      "reload": {
+        "state": "ready",
+        "seconds": 2.96879,
+        "resident_bytes": 3119939584,
+        "peak_resident_bytes": 3385180160
+      },
+      "after_reload": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.576604,
+          "calls": 7,
+          "resident_bytes": 3345874944,
+          "peak_resident_bytes": 3385180160,
+          "text_characters": 88,
+          "has_text": true
+        }
+      ],
+      "while_unloaded": [
+        {
+          "status": "error"
+        }
+      ],
+      "network_probe_exit": 0,
+      "network_probe": {
+        "connect_result": -1,
+        "errno": 1
+      },
+      "submitted_request_termination": {
+        "exit": -15,
+        "termination_seconds": 0.03847050000001673,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "injected_pressure_termination": {
+        "exit": 75,
+        "termination_seconds": 0.038911916999950336,
+        "note": "explicit process signal, not induced OS memory pressure"
+      },
+      "in_backend_running_acknowledgement": false,
+      "injected_native_fault": {
+        "exit": -11,
+        "supervisor_survived": true,
+        "note": "intentional native SIGSEGV, not a spontaneous model failure"
+      }
+    }
+  ],
+  "controls": [
+    {
+      "engine": "whisper_helper",
+      "backend_requested": "metal",
+      "long_input": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 0.317295,
+          "calls": 1,
+          "resident_bytes": 1940275200,
+          "peak_resident_bytes": 1940275200,
+          "text_characters": 89,
+          "has_text": true
+        },
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 0.243363,
+          "calls": 2,
+          "resident_bytes": 1940275200,
+          "peak_resident_bytes": 1940422656,
+          "text_characters": 55,
+          "has_text": true
+        }
+      ],
+      "oversized_exit": 2,
+      "injected_idle_pressure_exit": 75,
+      "fresh_load_after_pressure": {
+        "state": "ready",
+        "seconds": 5.81652,
+        "resident_bytes": 1921400832,
+        "peak_resident_bytes": 1921400832
+      },
+      "injected_crash_exit": -11,
+      "fresh_run_after_crash": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 0.285979,
+          "calls": 1,
+          "resident_bytes": 1934163968,
+          "peak_resident_bytes": 1934196736,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "missing_model_exit": 2
+    },
+    {
+      "engine": "whisper_helper",
+      "backend_requested": "cpu",
+      "long_input": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 63.3431,
+          "calls": 1,
+          "resident_bytes": 1936375808,
+          "peak_resident_bytes": 1936605184,
+          "text_characters": 89,
+          "has_text": true
+        },
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 65.5715,
+          "calls": 2,
+          "resident_bytes": 1937981440,
+          "peak_resident_bytes": 1938259968,
+          "text_characters": 55,
+          "has_text": true
+        }
+      ],
+      "oversized_exit": 2,
+      "injected_idle_pressure_exit": 75,
+      "fresh_load_after_pressure": {
+        "state": "ready",
+        "seconds": 0.419132,
+        "resident_bytes": 1771126784,
+        "peak_resident_bytes": 1771126784
+      },
+      "injected_crash_exit": -11,
+      "fresh_run_after_crash": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 65.846,
+          "calls": 1,
+          "resident_bytes": 1932197888,
+          "peak_resident_bytes": 1932443648,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "missing_model_exit": 2
+    },
+    {
+      "engine": "ct2_helper",
+      "backend_requested": "float32",
+      "long_input": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 7.20899,
+          "calls": 1,
+          "resident_bytes": 7260946432,
+          "peak_resident_bytes": 7654555648,
+          "text_characters": 178,
+          "has_text": true
+        },
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 4.35908,
+          "calls": 2,
+          "resident_bytes": 7234519040,
+          "peak_resident_bytes": 7694336000,
+          "text_characters": 55,
+          "has_text": true
+        }
+      ],
+      "oversized_exit": 1,
+      "injected_idle_pressure_exit": 75,
+      "fresh_load_after_pressure": {
+        "state": "ready",
+        "seconds": 1.81728,
+        "resident_bytes": 7031291904,
+        "peak_resident_bytes": 7031291904
+      },
+      "injected_crash_exit": -11,
+      "fresh_run_after_crash": [
+        {
+          "status": "ok",
+          "language": "de",
+          "seconds": 4.90454,
+          "calls": 1,
+          "resident_bytes": 7194525696,
+          "peak_resident_bytes": 7652294656,
+          "text_characters": 89,
+          "has_text": true
+        }
+      ],
+      "missing_model_exit": 1
+    },
+    {
+      "engine": "sherpa_helper",
+      "backend_requested": "cpu",
+      "long_input": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.965758,
+          "calls": 1,
+          "resident_bytes": 2072870912,
+          "peak_resident_bytes": 2072870912,
+          "text_characters": 378,
+          "has_text": true
+        },
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.183266,
+          "calls": 2,
+          "resident_bytes": 2073034752,
+          "peak_resident_bytes": 2073034752,
+          "text_characters": 60,
+          "has_text": true
+        }
+      ],
+      "oversized_exit": 1,
+      "injected_idle_pressure_exit": 75,
+      "fresh_load_after_pressure": {
+        "state": "ready",
+        "seconds": 0.61125,
+        "resident_bytes": 1872887808,
+        "peak_resident_bytes": 1872887808
+      },
+      "injected_crash_exit": -11,
+      "fresh_run_after_crash": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.226819,
+          "calls": 1,
+          "resident_bytes": 1921990656,
+          "peak_resident_bytes": 1921990656,
+          "text_characters": 88,
+          "has_text": true
+        }
+      ],
+      "missing_model_exit": 1
+    },
+    {
+      "engine": "sherpa_helper",
+      "backend_requested": "coreml",
+      "long_input": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 2.05553,
+          "calls": 1,
+          "resident_bytes": 9023717376,
+          "peak_resident_bytes": 9023717376,
+          "text_characters": 388,
+          "has_text": true
+        },
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.38688,
+          "calls": 2,
+          "resident_bytes": 5080498176,
+          "peak_resident_bytes": 9058533376,
+          "text_characters": 60,
+          "has_text": true
+        }
+      ],
+      "oversized_exit": 1,
+      "injected_idle_pressure_exit": 75,
+      "fresh_load_after_pressure": {
+        "state": "ready",
+        "seconds": 3.02434,
+        "resident_bytes": 1879900160,
+        "peak_resident_bytes": 1879900160
+      },
+      "injected_crash_exit": -11,
+      "fresh_run_after_crash": [
+        {
+          "status": "ok",
+          "language": "",
+          "seconds": 0.609522,
+          "calls": 1,
+          "resident_bytes": 3163291648,
+          "peak_resident_bytes": 3163291648,
+          "text_characters": 88,
+          "has_text": true
+        }
+      ],
+      "missing_model_exit": 1
+    }
+  ],
+  "frontend_comparison": {
+    "reference": "NumPy centered-reflect periodic-Hann Slaney128; waveform padded30sec",
+    "not_established": [
+      "OpenAI torch/librosa bit identity",
+      "faster-whisper short-input padding parity",
+      "tokenizer decoder parity",
+      "German recognition quality"
+    ],
+    "cases": [
+      {
+        "input": "de.wav",
+        "maximum_absolute_difference": 2.9254203073092455e-05,
+        "mean_absolute_difference": 4.2645871768859944e-08,
+        "all_finite": true,
+        "within_1e_minus4": true
+      },
+      {
+        "input": "en.wav",
+        "maximum_absolute_difference": 1.8743554315081568e-05,
+        "mean_absolute_difference": 3.731156978427179e-08,
+        "all_finite": true,
+        "within_1e_minus4": true
+      },
+      {
+        "input": "silence.wav",
+        "maximum_absolute_difference": 1.4496133182717585e-09,
+        "mean_absolute_difference": 1.4496133182717585e-09,
+        "all_finite": true,
+        "within_1e_minus4": true
+      }
+    ]
+  },
+  "decoder_comparison": [
+    {
+      "case": "speech-0",
+      "equal": true
+    },
+    {
+      "case": "speech-1",
+      "equal": true
+    },
+    {
+      "case": "speech-2",
+      "equal": true
+    },
+    {
+      "case": "special-prompt",
+      "equal": true
+    },
+    {
+      "case": "timestamp-not-special",
+      "equal": true
+    }
+  ],
+  "legacy_arm_cpu_on_current_host": {
+    "load": {
+      "state": "ready",
+      "seconds": 0.413445,
+      "resident_bytes": 1697153024,
+      "peak_resident_bytes": 1697153024
+    },
+    "forced_de": [
+      {
+        "status": "ok",
+        "language": "de",
+        "seconds": 126.988,
+        "calls": 1,
+        "resident_bytes": 1821392896,
+        "peak_resident_bytes": 1821638656,
+        "text_characters": 89,
+        "has_text": true
+      }
+    ],
+    "not_old_os_execution": true
+  },
+  "gpu_denial_probe": {
+    "scope": "IOKit denial in this helper only, not physical GPU failure",
+    "not_proven": [
+      "physical GPU fault recovery",
+      "automatic Telegram supervisor fallback policy",
+      "older OS/Intel runtime",
+      "same full-system memory footprint"
+    ],
+    "same_model_cpu_load": {
+      "state": "ready",
+      "seconds": 0.405706,
+      "resident_bytes": 1769979904,
+      "peak_resident_bytes": 1769979904
+    },
+    "same_model_cpu_run": [
+      {
+        "status": "ok",
+        "language": "de",
+        "seconds": 62.45,
+        "calls": 1,
+        "resident_bytes": 1930739712,
+        "peak_resident_bytes": 1931001856,
+        "text_characters": 89,
+        "has_text": true
+      }
+    ],
+    "gpu_denied_failed": true
+  }
+}
