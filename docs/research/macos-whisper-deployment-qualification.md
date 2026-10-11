@@ -1,8 +1,10 @@
 # Whisper macOS deployment and helper qualification
 
-For [Qualify macOS deployment baselines and helper isolation](https://github.com/comentator/tdesktop/issues/13), within [Plan on-device transcription for voice and video messages](https://github.com/comentator/tdesktop/issues/1). Evidence collected 2026-10-11. **Available M5 controls passed; complete deployment qualification is still blocked by specific external prerequisites.** No production feature is implemented or merged.
+For [Qualify macOS deployment baselines and helper isolation](https://github.com/comentator/tdesktop/issues/13), within [Plan on-device transcription for voice and video messages](https://github.com/comentator/tdesktop/issues/1). Evidence collected 2026-10-11. **The deployment planning gate is resolved for the first local M5/macOS27 implementation.** The user explicitly removed legacy-host coverage and prioritized reaching a working M5 implementation. No production feature is implemented or merged, and no shipping certification is claimed.
 
 [Content-free evidence](macos-whisper-deployment-evidence.json), [Apple isolation/source notes](macos-helper-isolation-source-notes.md), and [runnable prototype](../../Telegram/SourceFiles/media/audio/prototype_native_transcription/README.md) separate observed behavior from source contracts and unexecuted cells. [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12) provisionally accepted Whisper quality for the first implementation; it did not waive platform, privacy or lifecycle requirements.
+
+Current scope: reuse the exercised M5 Metal/full large-v3 configuration and same-model local CPU recovery. Legacy Intel/older-Mac coverage is out of scope; shipping signature/import certification and the full actual-pressure campaign are deferred to a later effort, not first-implementation blockers. The broader-scope measurements and recommendations below remain historical evidence, not requirements to provision legacy hosts now. Privacy, restricted helper access, fault containment, protected-message/account/storage/cancellation policies and pressure handling still belong in the implementation.
 
 ## Exact inputs and build boundary
 
@@ -71,13 +73,13 @@ No systemwide pressure induction, simulated pressure, root/debug injection or in
 
 The current common helper's critical handler also uses C++ stderr logging before exit; no allocation-free/nonblocking critical-path claim is made. The final helper boundary should retire/reap the helper without walking model memory or relying on an unbounded low-memory diagnostic path. Its real callback/reclamation qualification remains outstanding.
 
-## Exact missing prerequisites
+## Deferred broader qualification, outside the initial M5 destination
 
 1. Authorized actual Intel/macOS 10.13 and arm64/macOS 11 hosts, plus a native toolchain/runtime strategy compatible with each floor. Repeat signature, exact-model CPU load/RUN, cap/EOF/fault/cancellation and import/denial checks there. A modern SDK link, minimum metadata or Rosetta cannot replace these runs. No legacy host, SDK installer or remote model staging was implicitly approved.
 2. An authorized Developer ID signing/notary environment and the actual shipping helper sandbox/import launch topology. Verify independently constrained service capabilities, managed read-only asset transfer, balanced/stale bookmark access, unrelated descriptor closure and actual final bundle behavior. A network-entitled parent's inherited sandbox does not automatically narrow its child. No certificate/private key is requested in an issue or chat; use the owner's trusted local credential workflow.
 3. An isolated authorized environment for actual OS critical-pressure delivery and measured reclamation, not source/registration/signal simulation. Observe real events and CPU/GPU/service ownership, suppress automatic restart/replay, preserve prior results and keep queued work held until recovery. Do not force pressure on the user's active workstation.
 
-These are prerequisite work, not passed evidence or a silently narrowed platform requirement. Keep the deployment ticket open/claimed until they are supplied and its remaining cells are exercised or the user explicitly changes scope. Do not start production implementation or claim final specification readiness from the local pass.
+These were blockers under the original broader scope, not passed evidence. The user has now narrowed the destination; the deployment ticket is closed for the exercised current-M5 configuration, and these environment tickets were closed as outside that initial destination rather than completed. A future broader-support or rollout campaign needs its own scope and authorization. [Decide acceptance criteria and assemble the transcription specification](https://github.com/comentator/tdesktop/issues/7) can proceed without these campaigns; actual integrated-client implementation and smoke proof remain required.
 
 ## Reproduction
 

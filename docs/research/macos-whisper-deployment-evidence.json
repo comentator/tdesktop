@@ -1,7 +1,14 @@
 {
   "schema": 1,
   "ticket": "https://github.com/comentator/tdesktop/issues/13",
-  "qualification_status": "incomplete_external_prerequisites",
+  "qualification_status": "m5_local_scope_accepted_broader_certification_not_performed",
+  "scope_resolution": {
+    "target": "current_M5_macOS27_first_local_implementation",
+    "legacy_coverage": "out_of_scope",
+    "shipping_and_full_pressure_campaigns": "deferred_outside_initial_destination",
+    "privacy_and_failure_handling_policies_waived": false,
+    "measurements_changed": false
+  },
   "host": {
     "architecture": "arm64",
     "hardware": "Apple M5 Max",
@@ -444,7 +451,7 @@
     "fixtures": "mathematical zero PCM and generated nonsensitive file sentinels",
     "raw_logs": "local_only"
   },
-  "remaining_prerequisites": [
+  "deferred_broader_qualification": [
     "authorized Intel10.13 and arm64 11.0 hosts plus compatible toolchain",
     "authorized shipping signature and actual sandbox/import topology",
     "isolated real critical-pressure callback and reclamation qualification"

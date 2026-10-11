@@ -2,6 +2,8 @@
 
 Research snapshot: 2026-10-11, for [Qualify macOS deployment baselines and helper isolation](https://github.com/comentator/tdesktop/issues/13). Planning/prototype evidence only; no production changes or release certification. [Qualify German fidelity and unclear-span behavior](https://github.com/comentator/tdesktop/issues/12) waived German-quality qualification before the first implementation, **not** isolation, privacy, lifecycle or existing platform support.
 
+Subsequent scope override: the first implementation targets the current M5 Mac only; legacy coverage and shipping/full-pressure campaigns are outside that initial destination. The original broader-floor analysis below remains historical source evidence, not a gate requiring those environments now. Actual on-device, restricted-helper and safe failure/pressure behavior remain implementation policies. The deployment ticket records the current M5-first resolution.
+
 ## Scope and evidence labels
 
 The selected deployment remains pinned whisper.cpp v1.9.5 / **full large-v3**, with M5 Metal primary and explicit same-model native CPU recovery. The approved payload is the existing 3,095,033,483-byte GGML file with SHA-256 `64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2`; no turbo, quantization, smaller model or remote inference substitution. This identity and earlier runs are recorded in [the fidelity investigation](whisper-german-fidelity.md), not re-exercised here.
