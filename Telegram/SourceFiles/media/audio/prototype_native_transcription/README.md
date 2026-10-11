@@ -75,3 +75,24 @@ python3 "$PROTO/export_evidence.py" --input "$OUTPUT" \
 The helper registers an OS critical-memory-pressure dispatch source and holds its model without an application idle-unload timer. `SIGUSR1` exits75 for safe control injection, not an actual induced OS pressure event or proof of its dispatch callback. `CRASH` deliberately raises native SIGSEGV. Supervisor kills/restarts only its own helper; it never terminates Telegram or another installed application. Signal-termination timings are not native cancellation-callback or worst-case kernel-latency measurements. RSS excludes shared system-service memory and is not a production budget.
 
 See `frontend-notes.md` for exact CT2 feature/tokenizer arithmetic and the observed direct-FFT400 failure. Its corrected FFT80 decomposition preserves400-point bins; numerical fixture parity is not bit identity to every framework wrapper. Engine decoding settings differ (Whisper greedy versus CT2 beam5 versus Parakeet greedy), as do model variants and native-library optimization: do not turn these synthetic Debug observations into an engine-speed or German-quality ranking.
+
+## Whisper deployment and stricter helper boundary
+
+For [Qualify macOS deployment baselines and helper isolation](https://github.com/comentator/tdesktop/issues/13), read `docs/research/macos-whisper-deployment-qualification.md` and its aggregate evidence from the repository root. This branch reuses only the approved full GGML large-v3; it does not compare new backends or certify the unexecuted Intel/macOS 10.13 and arm64/macOS 11 cells.
+
+Build `whisper_helper` and `isolation_probe` in separate external Debug build directories: current arm64 Metal, arm64 CPU-only target 11 and generic x86_64 CPU-only target 10.13. Set `PROTOTYPE_CACHED_LIBS=OFF`, pinned `WHISPER_SOURCE`, `GGML_BLAS=OFF`, `GGML_OPENMP=OFF`, and `GGML_NATIVE=OFF`. Compile Metal out of both CPU builds. For x86, explicitly set `-march=x86-64` in C/C++ flags and disable the optional ISA options listed in the report; the default compiler target was Penryn. A minimum-version flag does not certify the linked runtime or actual old-host execution.
+
+Locally ad-hoc sign only the newly compiled external binaries with `codesign --force --sign - --options runtime` and verify strictly. This is not Developer ID, notarization or shipping App Sandbox certification; Hardened Runtime is unavailable on macOS 10.13.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 "$PROTO/qualify_deployment.py" \
+  --helper "$METAL_BUILD/bin/whisper_helper" \
+  --cpu-helper "$CPU_BUILD/bin/whisper_helper" \
+  --probe "$CPU_BUILD/bin/isolation_probe" \
+  --model "$APPROVED_FULL_LARGE_V3" \
+  --output "$NEW_PRIVATE_OUTPUT" --inject-termination
+```
+
+The script requires the fixed approved model identity, distinct external executables, and new/empty private output outside both checkouts. It performs native load/RUN/unload/reload, malformed-PCM rejection, private generated-file access/denial, loopback denial, isolated faults, explicit same-model CPU recovery and passive dispatch-pressure observation. It creates no human recordings, downloads or global pressure. A strict literal-root directory read permits observed dyld startup without recursive user-directory grants.
+
+Only `safe-aggregate.json` is publishable; all other files, raw responses and logs remain private. A passing local control set is not complete deployment qualification. No observed pressure callbacks means unobserved, not a passing critical-pressure/reclamation cell. Signal termination is explicitly unrelated to OS pressure. Production scheduling, account/result guards, security-scoped import topology, shipping signatures, complete GPU/service reclamation and real legacy hosts remain separate prerequisites.

@@ -1,0 +1,452 @@
+{
+  "schema": 1,
+  "ticket": "https://github.com/comentator/tdesktop/issues/13",
+  "qualification_status": "incomplete_external_prerequisites",
+  "host": {
+    "architecture": "arm64",
+    "hardware": "Apple M5 Max",
+    "macos": "27.0.1",
+    "sdk": "27.0",
+    "compiler": "Apple clang21"
+  },
+  "model": {
+    "format": "GGML",
+    "variant": "full large-v3",
+    "bytes": 3095033483,
+    "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2"
+  },
+  "source": {
+    "whisper_version": "1.9.5",
+    "whisper_commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037"
+  },
+  "debug_builds": [
+    {
+      "configuration": "arm64-metal-current",
+      "configure_exit": 0,
+      "build_exit": 0,
+      "seconds": 6.963960375003808,
+      "architecture": "arm64",
+      "minimum_macos": "27.0"
+    },
+    {
+      "configuration": "arm64-cpu-11",
+      "configure_exit": 0,
+      "build_exit": 0,
+      "seconds": 6.124076125001011,
+      "architecture": "arm64",
+      "minimum_macos": "11.0"
+    },
+    {
+      "configuration": "x86_64-cpu-10_13",
+      "configure_exit": 0,
+      "build_exit": 0,
+      "seconds": 5.118958582999767,
+      "architecture": "x86_64",
+      "minimum_macos": "10.13"
+    }
+  ],
+  "configuration": {
+    "blas": false,
+    "accelerate": true,
+    "dynamic_backends": false,
+    "native_tuning": false,
+    "intel_explicit_march": "x86-64",
+    "intel_optional_isa_disabled": [
+      "SSE42",
+      "AVX",
+      "AVX2",
+      "AVX_VNNI",
+      "BMI2",
+      "FMA",
+      "F16C",
+      "AVX512",
+      "AVX512_VBMI",
+      "AVX512_VNNI",
+      "AVX512_BF16",
+      "AMX_TILE",
+      "AMX_INT8",
+      "AMX_BF16"
+    ],
+    "coreml": false
+  },
+  "signature": {
+    "adhoc": true,
+    "runtime_flag": true,
+    "local_strict_verification_passed": true,
+    "developer_id_identities_available": 0,
+    "notarized": false,
+    "app_sandbox_certified": false,
+    "hardened_runtime_os_floor": "10.14"
+  },
+  "baseline_runtime": {
+    "intel_10_13": "not_executed",
+    "arm64_11_0": "not_executed",
+    "current_host_x86_launch": {
+      "exit": 1,
+      "native_started": false,
+      "error_class": "Bad CPU type",
+      "baseline_host_executed": false
+    },
+    "intel_sdk_warning": "The selected platform is no longer supported by libc++."
+  },
+  "dynamic_dependencies": {
+    "arm64-metal-current": [
+      "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+      "/System/Library/Frameworks/Metal.framework/Versions/A/Metal",
+      "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit",
+      "/usr/lib/libc++.1.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "/usr/lib/libobjc.A.dylib"
+    ],
+    "arm64-cpu-11": [
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+      "/usr/lib/libc++.1.dylib"
+    ],
+    "x86_64-cpu-10_13": [
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+      "/usr/lib/libc++.1.dylib"
+    ]
+  },
+  "observed_imports": {
+    "arm64-metal-current": {
+      "new_lapack_imports": [],
+      "legacy_accelerate_imports": [
+        "0x0008  _vDSP_maxv  (from Accelerate)",
+        "0x0009  _vDSP_measqv  (from Accelerate)",
+        "0x000A  _vDSP_sve  (from Accelerate)",
+        "0x000B  _vDSP_vadd  (from Accelerate)",
+        "0x000C  _vDSP_vdiv  (from Accelerate)",
+        "0x000D  _vDSP_vmul  (from Accelerate)",
+        "0x000E  _vDSP_vsadd  (from Accelerate)",
+        "0x000F  _vDSP_vsmsa  (from Accelerate)",
+        "0x0010  _vDSP_vsmul  (from Accelerate)",
+        "0x0011  _vDSP_vsub  (from Accelerate)"
+      ],
+      "libcxx_verbose_abort_imports": []
+    },
+    "arm64-cpu-11": {
+      "new_lapack_imports": [],
+      "legacy_accelerate_imports": [
+        "_vDSP_maxv  (from Accelerate)",
+        "_vDSP_measqv  (from Accelerate)",
+        "_vDSP_sve  (from Accelerate)",
+        "_vDSP_vadd  (from Accelerate)",
+        "_vDSP_vdiv  (from Accelerate)",
+        "_vDSP_vmul  (from Accelerate)",
+        "_vDSP_vsadd  (from Accelerate)",
+        "_vDSP_vsmsa  (from Accelerate)",
+        "_vDSP_vsmul  (from Accelerate)",
+        "_vDSP_vsub  (from Accelerate)"
+      ],
+      "libcxx_verbose_abort_imports": []
+    },
+    "x86_64-cpu-10_13": {
+      "new_lapack_imports": [],
+      "legacy_accelerate_imports": [
+        "_vDSP_maxv  (from Accelerate)",
+        "_vDSP_measqv  (from Accelerate)",
+        "_vDSP_sve  (from Accelerate)",
+        "_vDSP_vadd  (from Accelerate)",
+        "_vDSP_vdiv  (from Accelerate)",
+        "_vDSP_vmul  (from Accelerate)",
+        "_vDSP_vsadd  (from Accelerate)",
+        "_vDSP_vsmsa  (from Accelerate)",
+        "_vDSP_vsmul  (from Accelerate)",
+        "_vDSP_vsub  (from Accelerate)"
+      ],
+      "libcxx_verbose_abort_imports": []
+    }
+  },
+  "initial_profile_without_root_directory_read": {
+    "schema": 1,
+    "cases": {
+      "approved_full_model": {
+        "passed": true,
+        "expected_bytes": 3095033483
+      },
+      "parent_managed_import": {
+        "passed": true,
+        "copied_bytes": 35,
+        "model_copied": false,
+        "before_child_launch": true
+      },
+      "file_boundary_sibling": {
+        "passed": false
+      },
+      "file_boundary_import_original": {
+        "passed": false
+      },
+      "network_denied": {
+        "passed": false
+      },
+      "cpu_load": {
+        "passed": false
+      },
+      "oversized-count": {
+        "passed": false,
+        "loaded": false,
+        "exit_code": -6
+      },
+      "truncated-eof": {
+        "passed": false,
+        "loaded": false,
+        "exit_code": -6
+      },
+      "native_crash_containment": {
+        "passed": false,
+        "loaded": false,
+        "exit_code": -6
+      },
+      "metal_strict_load": {
+        "passed": false
+      },
+      "metal_strict_run": {
+        "passed": false,
+        "skipped_due_to_failed_load": true
+      },
+      "gpu_denied_native_failure": {
+        "passed": false,
+        "loaded_before_failure": false,
+        "exit_code": -6,
+        "expected_abort_observed": true,
+        "gpu_diagnostic_marker_observed": false,
+        "failure_diagnostic_marker_observed": false,
+        "retry_launched_automatically": false
+      },
+      "no_retry_before_explicit_call": {
+        "passed": true,
+        "intervening_launches": 0
+      },
+      "explicit_same_model_cpu_retry": {
+        "passed": false,
+        "skipped_due_to_failed_gpu_control": true
+      },
+      "passive_pressure": {
+        "passed": false
+      },
+      "optional_termination": {
+        "passed": false,
+        "loaded": false
+      }
+    },
+    "limitations": {
+      "ad_hoc_hardened_seatbelt_not_shipping_app_sandbox_certification": true,
+      "profile_is_allow_default_with_scoped_file_and_network_denials": true,
+      "no_developer_id_or_notarization_qualification": true,
+      "no_older_host_execution": true,
+      "passive_observation_not_critical_notification_or_reclamation_proof": true,
+      "model_boundary_and_decoding_only_not_product_scheduling_or_account_integration": true,
+      "gpu_retry_is_explicit_driver_control_not_automatic_telegram_recovery": true,
+      "count_guard_before_resize_and_payload_read_not_before_existing_bounded_reserve": true,
+      "no_native_model_or_working_memory_cap_proven": true,
+      "network_result_covers_only_the_attempted_loopback_tcp_connect": true,
+      "child_core_files_disabled_but_local_os_crash_diagnostics_may_still_occur": true,
+      "cpu_build_flags_and_linkage_require_parent_inspection_not_runtime_backend_selection": true
+    },
+    "approved_model_verified": true,
+    "unexpected_contract_failures": 13,
+    "helper_launch_attempts": 7,
+    "all_owned_helpers_exited": true,
+    "passed": false
+  },
+  "launch_differential": {
+    "unsandboxed_probe": {
+      "exit": 3,
+      "connect_errno": 61
+    },
+    "network_only_profile": {
+      "exit": 0,
+      "connect_errno": 1
+    },
+    "strict_without_root_data": {
+      "exit": -6,
+      "before_main": true
+    },
+    "strict_with_literal_root_data": {
+      "exit": 0,
+      "connect_errno": 1
+    },
+    "recursive_root_granted": false,
+    "recursive_preboot_granted": false
+  },
+  "current_host_local_controls": {
+    "schema": 1,
+    "cases": {
+      "approved_full_model": {
+        "passed": true,
+        "expected_bytes": 3095033483
+      },
+      "parent_managed_import": {
+        "passed": true,
+        "copied_bytes": 35,
+        "model_copied": false,
+        "before_child_launch": true
+      },
+      "file_boundary_sibling": {
+        "passed": true,
+        "exit_code": 0,
+        "model_read": true,
+        "managed_read": true,
+        "denied_read": true,
+        "denied_write": true
+      },
+      "file_boundary_import_original": {
+        "passed": true,
+        "exit_code": 0,
+        "model_read": true,
+        "managed_read": true,
+        "denied_read": true,
+        "denied_write": true
+      },
+      "network_denied": {
+        "passed": true,
+        "exit_code": 0,
+        "connect_result": -1,
+        "errno": 1
+      },
+      "cpu_load": {
+        "passed": true
+      },
+      "cpu_run": {
+        "passed": true,
+        "seconds": 134.001,
+        "calls": 1,
+        "samples": 16000,
+        "resident_bytes": 3584737280,
+        "peak_resident_bytes": 3584999424
+      },
+      "unload": {
+        "passed": true,
+        "seconds": 0,
+        "resident_bytes": 49512448,
+        "peak_resident_bytes": 3584999424
+      },
+      "unloaded_rejection": {
+        "passed": true
+      },
+      "explicit_reload": {
+        "passed": true,
+        "seconds": 0.674212959,
+        "resident_bytes": 3491381248,
+        "peak_resident_bytes": 3584999424
+      },
+      "run_after_reload": {
+        "passed": true,
+        "seconds": 134.674739,
+        "calls": 2,
+        "samples": 16000,
+        "resident_bytes": 3594829824,
+        "peak_resident_bytes": 3595091968
+      },
+      "oversized-count": {
+        "passed": true,
+        "exit_code": 2,
+        "payload_bytes_sent": 0,
+        "guard_before_oversized_resize_and_payload_read": true
+      },
+      "truncated-eof": {
+        "passed": true,
+        "exit_code": 2,
+        "payload_bytes_sent": 4,
+        "guard_before_oversized_resize_and_payload_read": false
+      },
+      "native_crash_containment": {
+        "passed": true,
+        "exit_code": -11,
+        "supervisor_survived": true,
+        "automatic_restart_launches": 0,
+        "intentional_native_fault": true
+      },
+      "metal_strict_load": {
+        "passed": true
+      },
+      "metal_strict_run": {
+        "passed": true,
+        "seconds": 0.660038,
+        "calls": 1,
+        "samples": 16000,
+        "resident_bytes": 3684155392,
+        "peak_resident_bytes": 3684155392
+      },
+      "gpu_denied_native_failure": {
+        "passed": true,
+        "loaded_before_failure": false,
+        "exit_code": -6,
+        "expected_abort_observed": true,
+        "gpu_diagnostic_marker_observed": true,
+        "failure_diagnostic_marker_observed": true,
+        "retry_launched_automatically": false
+      },
+      "no_retry_before_explicit_call": {
+        "passed": true,
+        "intervening_launches": 0
+      },
+      "explicit_same_model_cpu_retry": {
+        "passed": true,
+        "loaded": true,
+        "same_model": true,
+        "separate_explicit_driver_call": true,
+        "seconds": 134.366,
+        "calls": 1,
+        "samples": 16000,
+        "resident_bytes": 3584835584,
+        "peak_resident_bytes": 3585097728
+      },
+      "passive_pressure": {
+        "passed": true,
+        "exit_code": 0,
+        "registered": true,
+        "registration_seconds": 7.91e-07,
+        "observation_seconds": 5.00515,
+        "callbacks": 0,
+        "event_bits": 0,
+        "normal_observed": false,
+        "warn_observed": false,
+        "critical_observed": false,
+        "critical_reclamation_proven": false
+      },
+      "optional_termination": {
+        "passed": true,
+        "exit_code": -15,
+        "seconds": 0.038247584000032475,
+        "unrelated_to_actual_os_pressure": true
+      }
+    },
+    "limitations": {
+      "ad_hoc_hardened_seatbelt_not_shipping_app_sandbox_certification": true,
+      "profile_is_allow_default_with_scoped_file_and_network_denials": true,
+      "no_developer_id_or_notarization_qualification": true,
+      "no_older_host_execution": true,
+      "passive_observation_not_critical_notification_or_reclamation_proof": true,
+      "model_boundary_and_decoding_only_not_product_scheduling_or_account_integration": true,
+      "gpu_retry_is_explicit_driver_control_not_automatic_telegram_recovery": true,
+      "count_guard_before_resize_and_payload_read_not_before_existing_bounded_reserve": true,
+      "no_native_model_or_working_memory_cap_proven": true,
+      "network_result_covers_only_the_attempted_loopback_tcp_connect": true,
+      "child_core_files_disabled_but_local_os_crash_diagnostics_may_still_occur": true,
+      "cpu_build_flags_and_linkage_require_parent_inspection_not_runtime_backend_selection": true
+    },
+    "approved_model_verified": true,
+    "unexpected_contract_failures": 0,
+    "helper_launch_attempts": 8,
+    "all_owned_helpers_exited": true,
+    "passed": true
+  },
+  "privacy": {
+    "additional_downloads": false,
+    "microphone_or_camera_capture": false,
+    "remote_staging": false,
+    "raw_audio_or_transcript_publication": false,
+    "fixtures": "mathematical zero PCM and generated nonsensitive file sentinels",
+    "raw_logs": "local_only"
+  },
+  "remaining_prerequisites": [
+    "authorized Intel10.13 and arm64 11.0 hosts plus compatible toolchain",
+    "authorized shipping signature and actual sandbox/import topology",
+    "isolated real critical-pressure callback and reclamation qualification"
+  ]
+}
